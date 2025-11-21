@@ -83,7 +83,7 @@ if not st.session_state.data.empty:
 
         if cols[5].button("Hapus", key=f"delete_{idx}"):
             delete_transaction(idx)
-            st.experimental_rerun()
+            st.rerun()
 else:
     st.info("Belum ada transaksi. Tambahkan transaksi di atas.")
 
@@ -100,3 +100,4 @@ colA, colB, colC = st.columns(3)
 colA.metric("Total Debit", f"Rp {total_debit:,.0f}")
 colB.metric("Total Kredit", f"Rp {total_kredit:,.0f}")
 colC.metric("Saldo", f"Rp {saldo:,.0f}")
+
