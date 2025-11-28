@@ -6,6 +6,90 @@ from io import BytesIO
 # KONFIGURASI APLIKASI
 # =======================================================================================
 st.set_page_config(page_title="Laporan Keuangan", layout="wide")
+# =======================================================================================
+
+st.markdown("""
+<style>
+section[data-testid="stSidebar"] {
+    background-image: url("https://images.unsplash.com/photo-1527430253228-e93688616381");
+    background-size: cover;
+    background-position: center;
+}
+</style>
+""", unsafe_allow_html=True)
+
+# CUSTOM DESIGN (CSS)
+# =======================================================================================
+st.markdown("""
+<style>
+
+html, body, [class*="css"] {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Background halaman */
+main {
+    background-color: #f5f7fa;
+}
+
+/* Card style */
+.card {
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 14px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+/* Title */
+.big-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1ABC9C;
+    margin-bottom: 10px;
+}
+
+/* Subheader styling */
+h2, h3, h4 {
+    color: #374151 !important;
+    margin-top: 20px;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #1ABC9C;
+    color: white;
+}
+section[data-testid="stSidebar"] * {
+    color: black !important;
+}
+
+/* Button custom */
+div.stButton > button {
+    background-color: #1ABC9C;
+    color: white;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    border: none;
+}
+
+div.stButton > button:hover {
+    background-color: #1b38b1;
+    color: black;
+}
+
+/* Input focus */
+input:focus, select:focus, textarea:focus {
+    border: 2px solid #1ABC9C !important;
+}
+
+/* Table styling */
+[data-testid="stDataFrame"] div {
+    border-radius: 10px;
+}
+
+</style>
+""", unsafe_allow_html=True)
 
 USERS = {
     "admin": "123",
