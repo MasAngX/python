@@ -11,8 +11,8 @@ st.set_page_config(page_title="Laporan Keuangan", layout="wide")
 st.markdown("""
 <style>
 section[data-testid="stSidebar"] {
-    //background-image: url("https://images.unsplash.com/photo-1527430253228-e93688616381");
-    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1527430253228-e93688616381");
+    //background-size: cover;
     background-size: cover;
     background-position: center;
 }
@@ -515,4 +515,5 @@ else:
         neraca_page()
     elif menu == "Chart Akun":
         chart_akun_page()
+
 
